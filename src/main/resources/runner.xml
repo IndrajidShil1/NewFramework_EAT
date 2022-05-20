@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="amazon amazontest">
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="os" value="OS X"></parameter>
+    <parameter name="os_version" value="Monterey"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserVersion" value="101"></parameter>
+    <parameter name="url" value="https://www.amazon.com"></parameter>
+    <test name="amazontest">
+        <classes>
+            <class name="amazon.TestSingleItemSearch"></class>
+            <class name="amazon.TestFloatingMenu"></class>
+            <class name="amazon.TestSearchMultipleItems"></class>
+        </classes>
+    </test>
+</suite>
